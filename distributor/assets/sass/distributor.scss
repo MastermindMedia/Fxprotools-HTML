@@ -100,7 +100,7 @@ html {
 	}
 }
 
-/* Dashboard, Referral Program */
+/* Step1: Dashboard, Step3: Referral Program */
 .fx-header-title {
 	text-align: center;
 	margin: 15px 0 40px 0;
@@ -245,6 +245,45 @@ html {
 			background: #e74c3c;
 			color: #FFF;
 			text-align: center;
+		}
+	}
+}
+.fx-ref-lg-btn {
+	position: relative;
+	margin-top: 35px;
+	a {
+		padding: 30px;
+		display: block;
+		background: #e74c3c;
+		color: #FFF;
+		text-align: center;
+	}
+}
+
+/* Step2: Products */
+.fx-training-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		border-bottom: 1px solid #DDD;
+		border-left: 1px solid #DDD;
+		border-right: 1px solid #DDD;
+		padding: 28px 20px;
+		position: relative;
+		&:first-child { border-top: 1px solid #DDD; }
+		.action {
+			display: block;
+			width: 150px;
+			border: 1px solid #DDD;
+			padding: 9px;
+			text-align: center;
+			position: absolute;
+			right: 20px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			height: 40px;
 		}
 	}
 }
