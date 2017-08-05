@@ -16,6 +16,30 @@ body {
 html {
     font-size: 100%;
 }
+/* Helper Classes */
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.centered-block {
+	display: block;
+	margin: 0 auto;
+}
+.no-border-radius {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+.text-bold {
+	font-weight: bold;
+}
+/* Buttons */
+.fx-btn {
+	border-radius: 0;
+	font-weight: normal;
+}
 
 /* Wrapper */
 .fx-wrapper {
@@ -384,5 +408,32 @@ html {
 				}
 			}
 		}
+	}
+}
+.fx-course-navigation {
+	ul {
+		/*list-style: none;*/
+		margin: 0;
+		padding: 0 0 0 15px;
+		li {
+			
+		}
+	}
+}
+.fx-course-outline {
+	position: relative;
+}
+.fx-lessons {
+	position: relative;
+	.number {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.status {
+		border: 1px solid #DDD;
+		padding: 4px 0;
+		width: 30px;
+		height: 30px;
+		text-align: center;
 	}
 }
