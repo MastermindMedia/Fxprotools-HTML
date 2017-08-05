@@ -45,6 +45,10 @@ html {
 .fx-wrapper {
 	position: relative;
 	padding-bottom: 50px;
+	height: 100%;
+	&.login {
+		padding-bottom: 0;
+	}
 }
 
 /* Main Navigation */
@@ -119,6 +123,68 @@ html {
 				background-color: #DDD;
 				color: #FFF;
 				cursor: not-allowed;
+			}
+		}
+	}
+}
+
+/* Login */
+.fx-login {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	.left {
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		.content-wrapper {
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			height: 100%;
+			.content {
+				padding: 15px;
+				width: 85%;
+				h2 {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.right {
+		background: #000;
+		width: 50%;
+		position: absolute;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		.content-wrapper {
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			height: 100%;
+			.content {
+				padding: 15px;
+				width: 85%;
+				h2 {
+					margin-top: 0;
+					color: #FFF;
+				}
+				p, a {
+					color: #FFF;
+				}
+				.form-control {
+					height: auto;
+					padding: 10px 12px;
+				}
+				button {
+					width: 100%;
+					margin-bottom: 10px;
+				}
 			}
 		}
 	}
@@ -399,7 +465,6 @@ html {
 				border: 1px solid #DDD;
 				padding: 10px 15px;
 				margin: 0 auto;
-				text-align: center;
 			}
 			.progress {
 				border-radius: 0;
