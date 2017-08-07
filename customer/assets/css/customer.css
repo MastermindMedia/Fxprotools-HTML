@@ -1,1 +1,332 @@
-/* Your CSS Here */
+/* Base */
+*, *:after, *::before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, body, html {
+  -webkit-font-smoothing: antialiased; }
+
+html.is-loading {
+  overflow: hidden; }
+
+html,
+body {
+  height: 100%; }
+
+html {
+  font-size: 100%; }
+
+/* Helper Classes */
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.centered-block {
+  display: block;
+  margin: 0 auto; }
+
+.no-border-radius {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; }
+
+.text-bold {
+  font-weight: bold; }
+
+.centered-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/* Buttons */
+.fx-btn {
+  border-radius: 0;
+  font-weight: normal; }
+
+/* Wrapper */
+.fx-wrapper {
+  position: relative;
+  padding-bottom: 50px;
+  height: 100%; }
+  .fx-wrapper.login {
+    padding-bottom: 0; }
+
+/* Main Navigation */
+.fx-navbar-main {
+  position: relative;
+  border-bottom: 1px solid #DDD; }
+  .fx-navbar-main .fx-nav-options {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .fx-navbar-main .fx-nav-options li {
+      float: left;
+      margin-right: 10px; }
+      .fx-navbar-main .fx-nav-options li:last-child {
+        margin-right: 0; }
+      .fx-navbar-main .fx-nav-options li a {
+        font-size: 20px;
+        display: block;
+        padding: 25px 10px;
+        line-height: 30px;
+        text-align: center; }
+        .fx-navbar-main .fx-nav-options li a:hover, .fx-navbar-main .fx-nav-options li a:active, .fx-navbar-main .fx-nav-options li a:focus {
+          text-decoration: none; }
+      .fx-navbar-main .fx-nav-options li.account {
+        padding-top: 15px; }
+        .fx-navbar-main .fx-nav-options li.account a {
+          border: 1px solid #DDD;
+          line-height: 5px;
+          padding: 20px 25px;
+          font-size: 13px; }
+  .fx-navbar-main .fx-navbar-header .navbar-brand {
+    height: auto; }
+
+/* Sub Navigation */
+.fx-navbar-sub {
+  position: relative;
+  min-height: inherit; }
+  .fx-navbar-sub .fx-nav-options {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border: 1px solid #DDD; }
+    .fx-navbar-sub .fx-nav-options li {
+      display: inline-block;
+      margin-right: 10px; }
+      .fx-navbar-sub .fx-nav-options li:last-child {
+        margin-right: 0; }
+      .fx-navbar-sub .fx-nav-options li a {
+        display: inline-block;
+        padding: 10px 15px;
+        width: 200px;
+        border: 1px solid #DDD; }
+        .fx-navbar-sub .fx-nav-options li a:hover, .fx-navbar-sub .fx-nav-options li a:focus, .fx-navbar-sub .fx-nav-options li a:active {
+          text-decoration: none; }
+      .fx-navbar-sub .fx-nav-options li.dashboard a {
+        width: 45px; }
+      .fx-navbar-sub .fx-nav-options li.active a {
+        background-color: #23527c;
+        color: #FFF;
+        border-color: #23527c; }
+      .fx-navbar-sub .fx-nav-options li.locked a {
+        background-color: #DDD;
+        color: #FFF;
+        cursor: not-allowed; }
+
+/* Login */
+.fx-login {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  .fx-login .left {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0; }
+    .fx-login .left .content-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%; }
+      .fx-login .left .content-wrapper .content {
+        padding: 15px;
+        width: 85%; }
+        .fx-login .left .content-wrapper .content h2 {
+          margin-top: 0; }
+  .fx-login .right {
+    background: #000;
+    width: 50%;
+    position: absolute;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; }
+    .fx-login .right .content-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%; }
+      .fx-login .right .content-wrapper .content {
+        padding: 15px;
+        width: 85%; }
+        .fx-login .right .content-wrapper .content h2 {
+          margin-top: 0;
+          color: #FFF; }
+        .fx-login .right .content-wrapper .content p, .fx-login .right .content-wrapper .content a {
+          color: #FFF; }
+        .fx-login .right .content-wrapper .content .form-control {
+          height: auto;
+          padding: 10px 12px; }
+        .fx-login .right .content-wrapper .content button {
+          width: 100%;
+          margin-bottom: 10px; }
+
+/* Step1: Dashboard, Step3: Referral Program */
+.fx-header-title {
+  text-align: center;
+  margin: 15px 0 40px 0; }
+  .fx-header-title h1 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: bold; }
+
+.fx-mid-header {
+  position: relative;
+  text-align: center;
+  padding: 35px 0; }
+  .fx-mid-header h2 {
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: bold; }
+
+.fx-video-container {
+  height: 445px;
+  background: #000; }
+
+.fx-board {
+  position: relative;
+  border: 1px solid #DDD; }
+  .fx-board .fx-board-title {
+    padding: 15px; }
+    .fx-board .fx-board-title span {
+      font-weight: bold;
+      text-align: center;
+      display: block; }
+    .fx-board .fx-board-title.w-text {
+      position: relative; }
+      .fx-board .fx-board-title.w-text span {
+        margin-bottom: 5px; }
+      .fx-board .fx-board-title.w-text p {
+        margin-bottom: 0; }
+  .fx-board.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .fx-board.checklist li {
+      border-bottom: 1px solid #DDD;
+      padding: 10px; }
+      .fx-board.checklist li:first-child {
+        border-top: 1px solid #DDD; }
+      .fx-board.checklist li:last-child {
+        border-bottom: none; }
+      .fx-board.checklist li .fx-checkbox {
+        border: 1px solid #DDD;
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden; }
+        .fx-board.checklist li .fx-checkbox.checked {
+          border: none; }
+          .fx-board.checklist li .fx-checkbox.checked:before {
+            content: "\f00c";
+            color: #FFF;
+            background: #1abc9c;
+            font-family: FontAwesome;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding-top: 2px; }
+      .fx-board.checklist li a.start {
+        background: #e74c3c;
+        display: block;
+        color: #FFF;
+        text-align: center;
+        padding: 15px; }
+  .fx-board .fx-board-list {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .fx-board .fx-board-content {
+    padding: 15px 35px 30px 35px; }
+    .fx-board .fx-board-content ol {
+      margin: 0; }
+      .fx-board .fx-board-content ol li {
+        margin-bottom: 15px; }
+        .fx-board .fx-board-content ol li:last-child {
+          margin-bottom: 0; }
+
+.fx-lg-links {
+  margin-top: 30px; }
+  .fx-lg-links .fx-lg-link {
+    text-align: center;
+    border: 1px solid #DDD;
+    padding: 30px 20px;
+    width: 100%;
+    display: block; }
+
+.fx-ref-links {
+  margin-top: 30px;
+  border: 1px solid #DDD;
+  padding: 15px 30px 30px 30px; }
+  .fx-ref-links .fx-ref-title {
+    text-align: center; }
+    .fx-ref-links .fx-ref-title h3 {
+      font-weight: bold;
+      margin-bottom: 5px; }
+  .fx-ref-links .box {
+    border: 1px solid #DDD;
+    padding: 15px;
+    margin-top: 20px; }
+    .fx-ref-links .box .link {
+      margin-top: 10px;
+      border: 1px solid #DDD;
+      padding: 15px;
+      position: relative; }
+    .fx-ref-links .box .link-btn {
+      margin-top: 10px;
+      padding: 15px;
+      display: block;
+      background: #e74c3c;
+      color: #FFF;
+      text-align: center; }
+
+.fx-ref-lg-btn {
+  position: relative;
+  margin-top: 35px; }
+  .fx-ref-lg-btn a {
+    padding: 30px;
+    display: block;
+    background: #e74c3c;
+    color: #FFF;
+    text-align: center; }
