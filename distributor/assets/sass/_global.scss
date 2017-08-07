@@ -1,0 +1,31 @@
+/* Base */
+*, *:after, *::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, body, html {
+    -webkit-font-smoothing: antialiased;
+}
+
+html.is-loading {
+    overflow: hidden;
+}
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* Wrapper */
+.fx-wrapper {
+	position: relative;
+	padding-bottom: 50px;
+	height: auto;
+	&.login {
+		padding-bottom: 0;
+	}
+}

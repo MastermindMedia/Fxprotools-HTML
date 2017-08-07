@@ -1,0 +1,30 @@
+/* Helper Classes*/
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.centered-block {
+	display: block;
+	margin: 0 auto;
+}
+.no-border-radius {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+.text-bold {
+	font-weight: bold;
+}
+.centered-item {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.padding-md {
+	padding: 15px;
+}
+.padding-lg {
+	padding: 25px;
+}
