@@ -7,8 +7,6 @@
 /* Login */
 .fx-login {
 	position: relative;
-	height: 100%;
-	width: 100%;
 	.left {
 		width: 50%;
 		height: 100%;
@@ -94,13 +92,13 @@
 	}
 }
 
-.fx-course-navigation {
-	ul {
-		/*list-style: none;*/
-		margin: 0;
-		padding: 0 0 0 15px;
-		li {
-			
-		}
+/* Product - Coaching / Webinars */
+.fx-coaching-tab {
+	position: relative;
+	.tab-pane {
+		border-left: 1px solid #DDD;
+		border-right: 1px solid #DDD;
+		border-bottom: 1px solid #DDD;
+		min-height: 500px;
 	}
 }

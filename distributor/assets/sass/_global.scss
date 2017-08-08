@@ -19,13 +19,3 @@ body {
 html {
     font-size: 100%;
 }
-
-/* Wrapper */
-.fx-wrapper {
-	position: relative;
-	padding-bottom: 50px;
-	height: auto;
-	&.login {
-		padding-bottom: 0;
-	}
-}
