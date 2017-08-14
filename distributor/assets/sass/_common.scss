@@ -1,4 +1,8 @@
-/* Common */
+/*============*/
+/*== COMMON ==*/ 
+/*============*/
+
+// Wrapper
 .fx-wrapper {
 	position: relative;
 	padding-bottom: 50px;
@@ -9,6 +13,7 @@
 	}
 }
 
+// Main Header Title
 .fx-header-title {
 	text-align: center;
 	margin: 15px 0 40px 0;
@@ -20,6 +25,7 @@
 	}
 }
 
+// Mid Header Title
 .fx-mid-header {
 	position: relative;
 	text-align: center;
@@ -31,11 +37,13 @@
 	}
 }
 
+// Video Container
 .fx-video-container {
 	height: 440px;
 	background: #000;
 }
 
+// Board
 .fx-board {
 	position: relative;
 	border: 1px solid #DDD;
@@ -56,6 +64,7 @@
 			}
 		}
 	}
+	// With Checklist
 	&.checklist {
 		list-style: none;
 		padding: 0;
@@ -94,11 +103,13 @@
 			}
 		}
 	}
+	// List Only
 	.fx-board-list {
 		padding: 0;
 		margin: 0;
 		list-style: none;
 	}
+	// Board Content
 	.fx-board-content {
 		padding: 15px 35px 30px 35px;
 		ol {
@@ -113,6 +124,7 @@
 	}
 }
 
+// Tabs
 .fx-tabs {
 	position: relative;
 	width: 100%;
@@ -135,6 +147,7 @@
 	}
 }
 
+// List - Training
 .fx-list-training {
 	list-style: none;
 	padding: 0;
@@ -161,6 +174,8 @@
 		}
 	}
 }
+
+// List - Courses
 .fx-list-courses {
 	position: relative;
 	list-style: none;
@@ -230,6 +245,7 @@
 	}
 }
 
+// Table - Lessons
 .fx-table-lessons {
 	position: relative;
 	.number {
