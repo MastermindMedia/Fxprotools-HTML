@@ -245,6 +245,40 @@
 	}
 }
 
+// List - Contacts
+.fx-list-contacts {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		border-top: 1px solid #DDD;
+		border-left: 1px solid #DDD;
+		border-right: 1px solid #DDD;
+		padding: 10px;
+		&:last-child {
+			border-bottom: 1px solid #DDD;
+		}
+		.media-body {
+			position: relative;
+		}
+		.info {
+			float: left;
+			position: relative;
+			vertical-align: middle;
+		}
+		.actions {
+			height: 30px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+	}
+}
+
+
 // Table - Lessons
 .fx-table-lessons {
 	position: relative;
