@@ -3,16 +3,16 @@
 /*===========*/
 
 // Slide Toggle - Checkbox Transformation
-.fx-toggle {
+.fx-checkbox-toggle {
 	display: none;
 	// add default box-sizing for this scope
-	&, &:after, &:before, & *, & *:after, & *:before, & + .fx-toggle-btn {
+	&, &:after, &:before, & *, & *:after, & *:before, & + .fx-checkbox-toggle-btn {
 		box-sizing: border-box;
 		&::selection {
 			background: none;
 		}
 	}
-	+ .fx-toggle-btn {
+	+ .fx-checkbox-toggle-btn {
 		outline: 0;
 		display: block;
 		width: 50px;
@@ -35,10 +35,10 @@
 			display: none;
 		}
 	}
-	&:checked + .fx-toggle-btn:after {
+	&:checked + .fx-checkbox-toggle-btn:after {
 		left: 50%;
 	}
-	+ .fx-toggle-btn {
+	+ .fx-checkbox-toggle-btn {
 		background: #f0f0f0;
 		border-radius: 2em;
 		padding: 2px;
@@ -49,8 +49,7 @@
 			transition: all .2s ease;
 		}
 	}
-  
-	&:checked + .fx-toggle-btn {
+	&:checked + .fx-checkbox-toggle-btn {
 		background: #5cb85c;
 	}
 }
