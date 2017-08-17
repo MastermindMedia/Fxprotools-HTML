@@ -179,47 +179,7 @@
 }
 
 // Marketing Funnels
-.fx-tabs-vertical {
-	position: relative;
-	.nav-tabs {
-		float: left;
-		border-bottom: 0;
-		li {
-			float: none;
-			margin: 0;
-			&:first-child a { border-top: 1px solid #DDD!important; }
-			a {
-				margin-right: 0;
-				border-bottom: 1px solid #DDD!important;
-				border-left: 1px solid #DDD!important;
-				border-radius: 0;
-			}
-			&.active a {
-				background-color: #23527c;
-				color: #FFF;
-			}
-		}
-	}
-	.nav-tabs>li.active>a,
-	.nav-tabs>li.active>a:hover,
-	.nav-tabs>li.active>a:focus {
-		border:0;
-	}
-	.tab-content {
-		margin-left: 45px;
-		.tab-pane {
-			display: none;
-			background-color: #FFF;
-			padding: 20px;
-			overflow-y: auto;
-			border-top: 1px solid #DDD;
-			border-right: 1px solid #DDD;
-			border-bottom: 1px solid #DDD;
-			min-height: 500px;
-			border-left: 1px solid #DDD;
-		}
-		.active { display: block; }
-	}
+.fx-tabs-vertical.marketing-funnels {
 	.list-group {
 		width: 100%;
 		.list-group-item {
@@ -283,8 +243,6 @@
 		}
 	}
 }
-
-// Marketing Funnels
 .total-count.funnel-stats {
 	border: 1px solid #DDD;
 	text-align: center;
@@ -293,6 +251,69 @@
 }
 
 // Marketing Contacts
-.fx-search-contact {
-	
+.fx-contact-panel {
+	position: relative;
+	.media-body {
+		position: relative;
+		.info {
+			position: relative;
+			.info-list {
+				list-style: none;
+				padding: 0;
+				margin: 0 0 7px 0;
+				li {
+					display: inline-block;
+					margin-right: 10px;
+					font-size: 12px;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			p {
+				font-size: 12px;
+			}
+		}
+		.action {
+			width: 100px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			text-align: center;
+			i {
+				font-size: 35px;
+			}
+			a {
+				font-size: 12px;
+				&:hover, &:focus, &:active {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+.fx-tabs-vertical.marketing-contacts {
+	.list-info {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			margin-bottom: 5px;
+			font-size: 13px;
+			span {
+				font-weight: bold;
+			}
+			&:last-chil {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+#view-purchase-details {
+	display: none;
 }
