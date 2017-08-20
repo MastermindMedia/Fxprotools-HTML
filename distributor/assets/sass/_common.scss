@@ -130,7 +130,7 @@
 	}
 }
 
-// Tabs
+// Tabs - Full
 .fx-tabs {
 	position: relative;
 	width: 100%;
@@ -150,6 +150,33 @@
 				border-bottom: 1px solid #DDD;				
 			}
 		}
+	}
+}
+
+// Tabs - Bordered
+.fx-tabs-bordered {
+	position: relative;
+	li {
+		text-align: center;
+		a {
+			border: 1px solid #DDD;
+			border-radius: 0;
+			display: block;
+		}
+		&.active a {
+			border-bottom: 1px solid #DDD;
+			background: #23527c;
+			color: #FFF;
+			&:focus, &:hover, &:active {
+				border-bottom: 1px solid #DDD;				
+			}
+		}
+	}
+	.tab-content {
+		border-left: 1px solid #DDD;
+		border-bottom: 1px solid #DDD;
+		border-right: 1px solid #DDD;
+		padding: 20px;
 	}
 }
 
