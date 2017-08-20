@@ -317,3 +317,48 @@
 #view-purchase-details {
 	display: none;
 }
+
+// Account - Inbox
+.fx-inbox-nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-top: 1px solid #DDD;
+    margin-top: 15px;
+    li {
+		display: inline-block;
+		line-height: 45px;
+		width: 100%;
+		border-bottom: 1px solid #DDD;
+		&:last-child {
+			border-bottom: none;
+		}
+		a {
+			color: #6a6a6a;
+			display: inline-block;
+			line-height: 45px;
+			padding: 0 20px;
+			width: 100%;
+			span.label {
+				margin-top: 13px;
+			}
+			i {
+				color: #6a6a6a;
+				font-size: 16px;
+				padding-right: 10px;
+			}
+		}
+		&.active a, a:focus, a:hover {
+			color: #337ab7;
+			font-weight: bold;
+			text-decoration: none;
+		}
+    }
+}
+.fx-table-inbox {
+	tr.unread td {
+		background: #f7f7f7;
+		font-weight: bold;
+	}
+}
